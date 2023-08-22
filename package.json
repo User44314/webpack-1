@@ -1,0 +1,17 @@
+{
+  "name": "webpack-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/User44314/webpack-1.git",
+  "author": "Shamash <redboot1@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node_modules/.bin/webpack --progress",
+    "start": "node_modules/.bin/webpack-dev-server"
+  },
+  "dependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
