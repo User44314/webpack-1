@@ -7,9 +7,13 @@
   "license": "MIT",
   "scripts": {
     "build": "node_modules/.bin/webpack --progress",
-    "start": "node_modules/.bin/webpack-dev-server"
+    "start": "node_modules/.bin/webpack-dev-server",
+    "test": "jest"
   },
   "dependencies": {
+    "autoprefixer": "10.4.5",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"

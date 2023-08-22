@@ -1,14 +1,34 @@
-const path = require('path');
+const path = require("path");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
-module.export = {
-    entry: './src/index.js',
-    output: {
-      path: path.resolve(__dirname, 'dist'),
-      filename: 'main.js',
-    },
-    mode: 'development',
-    devServer: {
-        compress: true,
-        port: 3000,
-    }
+module.exports = {
+  entry: "./src/index.js",
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "main.js",
+  },
+  mode: "development",
+  /* module: {
+    rules: [
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader",
+            options: { minmize: false },
+          },
+        ],
+      },
+    ],
+  },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: "./src/index.html",
+      filename: "./index.html",
+    }),
+  ], */
+  devServer: {
+    compress: true,
+    port: 3000,
+  },
 };

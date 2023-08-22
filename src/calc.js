@@ -1,1 +1,1 @@
-export const  calculate = (a, b) => a + b;
+export const calculate = (a, b) => a + b;

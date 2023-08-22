@@ -1,11 +1,11 @@
 # webpack-1
 
-# npm install -g yarn
-# yarn init
-# yarn add webpack webpack-cli webpack-dev-server --save-dev
-# add file webpack.config.js
+> npm install -g yarn
+> yarn init
+> yarn add webpack webpack-cli webpack-dev-server --save-dev
+> add file webpack.config.js
 
-# add scripts
+> add scripts
 
 > "scripts": {
 >   "build": "node_modules/.bin/webpack --progress",
@@ -13,10 +13,13 @@
 >  },
 #
 
+> yarn run build
 
-# yarn run build
 
+> yarn run build сборка
 
-# yarn run build сборка
+> yarn add html-loader html-webpack-plugin --save-dev
 
-# yarn add html-loader html-webpack-plugin -save-dev
+> check yarn start
+>npm install autoprefixer@10.4.5 --save-exact
+>run build
