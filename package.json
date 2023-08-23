@@ -7,8 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "node_modules/.bin/webpack --progress",
-    "start": "node_modules/.bin/webpack-dev-server",
-    "test": "jest"
+    "start": "node_modules/.bin/webpack-dev-server"
   },
   "dependencies": {
     "autoprefixer": "10.4.5",

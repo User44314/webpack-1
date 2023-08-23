@@ -8,14 +8,14 @@ module.exports = {
     filename: "main.js",
   },
   mode: "development",
-  /* module: {
+  module: {
     rules: [
       {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader",
-            options: { minmize: false },
+            loader: 'html-loader',
+            options: { minimize: false },
           },
         ],
       },
@@ -26,7 +26,7 @@ module.exports = {
       template: "./src/index.html",
       filename: "./index.html",
     }),
-  ], */
+  ], 
   devServer: {
     compress: true,
     port: 3000,
