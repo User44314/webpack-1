@@ -14,8 +14,25 @@ module.exports = {
         test: /\.html$/,
         use: [
           {
-            loader: 'html-loader',
+            loader: "html-loader",
             options: { minimize: false },
+          },
+        ],
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          //create style nodes from js stringd
+          "style-loader",
+          //translate css into commonjs
+          "css-loader",
+          //compiles sass to css
+          "sass-loader",
+          {
+            loader: "sass-resources-loader",
+            options: {
+              resources: ["src/styles/vars.scss"],
+            },
           },
         ],
       },
@@ -26,7 +43,10 @@ module.exports = {
       template: "./src/index.html",
       filename: "./index.html",
     }),
-  ], 
+  ],
+  optimization: {
+    minimize: true,
+  },
   devServer: {
     compress: true,
     port: 3000,

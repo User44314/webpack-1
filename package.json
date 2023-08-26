@@ -11,10 +11,19 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.5",
+    "css-loader": "^6.8.1",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
+    "sass": "^1.66.1",
+    "sass-loader": "^13.3.2",
+    "sass-resources-loader": "^2.2.5",
+    "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^4.0.2",
+    "webpack-obfuscator": "^3.5.1"
   }
 }
